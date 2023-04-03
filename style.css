@@ -19,8 +19,11 @@
     align-items: center;
     width: 100%;
     height: 700px;
-    background-image: url('/imgs/jumbtron.jpg');
+    background-image: url('imgs/jumbtron.jpg');
     background-position: center;
+    filter: sepia(30%);
+    filter: opacity(80%);
+    -webkit-filter: opacity(80%);
 }
 
 .jumbotron h1{
@@ -38,11 +41,39 @@
     display: table;
     margin: 0 auto;
 }
+
+.jumbotron .btn-main:hover{
+    box-shadow: 1px 1px 1px 1px #797878;
+}
+
 .heading{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
+    
 }
 .services{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding-bottom: 2%;
 }
+
+.services .service .btn-secondry{
+    display: table;
+    border: 3px solid #fdbe88;
+    color: #ffbc7a;
+    padding: 10px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+.services .service .btn-secondry:hover{
+color: #fff;
+background: #fdbe88;
+
+}
+
